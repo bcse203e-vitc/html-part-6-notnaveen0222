@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Armstrong Number</title></head>
+<body>
+<script>
+let num = prompt("Enter a number:");
+let sum = 0, power = num.length;
+for (let digit of num) {
+    sum += Math.pow(parseInt(digit), power);
+}
+alert(sum == num ? "Armstrong Number" : "Not an Armstrong Number");
+</script>
+</body>
+</html>

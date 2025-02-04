@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Check Pangram</title></head>
+<body>
+<script>
+let str = prompt("Enter a sentence:").toLowerCase();
+let isPangram = [...'abcdefghijklmnopqrstuvwxyz'].every(ch => str.includes(ch));
+alert(isPangram ? "It is a pangram" : "Not a pangram");
+</script>
+</body>
+</html>

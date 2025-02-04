@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Find LCM</title></head>
+<body>
+<script>
+let a = parseInt(prompt("Enter first number:"));
+let b = parseInt(prompt("Enter second number:"));
+let gcd = (x, y) => y === 0 ? x : gcd(y, x % y);
+alert(`LCM: ${(a * b) / gcd(a, b)}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Longest Word</title></head>
+<body>
+<script>
+let words = prompt("Enter a sentence:").split(" ");
+let longest = words.reduce((a, b) => a.length >= b.length ? a : b);
+alert(`Longest word: ${longest}`);
+</script>
+</body>
+</html>

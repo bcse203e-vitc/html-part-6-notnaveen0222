@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fibonacci Series</title></head>
+<body>
+<script>
+let n = parseInt(prompt("Enter N for Fibonacci series:"));
+let a = 0, b = 1, result = "0";
+for (let i = 1; i < n; i++) {
+    let temp = a + b;
+    result += ", " + b;
+    a = b;
+    b = temp;
+}
+alert(`Fibonacci Series: ${result}`);
+</script>
+</body>
+</html>

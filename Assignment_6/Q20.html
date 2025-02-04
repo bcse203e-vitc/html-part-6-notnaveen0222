@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Character Frequency</title></head>
+<body>
+<script>
+let str = prompt("Enter a string:");
+let freq = {};
+for (let ch of str) {
+    freq[ch] = (freq[ch] || 0) + 1;
+}
+alert(JSON.stringify(freq));
+</script>
+</body>
+</html>

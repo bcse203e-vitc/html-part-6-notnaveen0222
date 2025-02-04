@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>First Non-Repeating Character</title></head>
+<body>
+<script>
+let str = prompt("Enter a string:");
+for (let ch of str) {
+    if (str.indexOf(ch) === str.lastIndexOf(ch)) {
+        alert(`First non-repeating character: ${ch}`);
+        break;
+    }
+}
+</script>
+</body>
+</html>

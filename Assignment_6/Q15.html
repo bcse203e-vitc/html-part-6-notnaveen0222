@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Find Missing Number</title></head>
+<body>
+<script>
+let arr = prompt("Enter numbers from 1 to N separated by commas:").split(",").map(Number);
+let n = arr.length + 1;
+let sum = (n * (n + 1)) / 2;
+let actualSum = arr.reduce((a, b) => a + b, 0);
+alert(`Missing Number: ${sum - actualSum}`);
+</script>
+</body>
+</html>

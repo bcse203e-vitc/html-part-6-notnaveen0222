@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Second Smallest & Largest</title></head>
+<body>
+<script>
+let arr = prompt("Enter numbers separated by commas:").split(",").map(Number);
+arr = [...new Set(arr)].sort((a, b) => a - b);
+alert(`Second Smallest: ${arr[1]}, Second Largest: ${arr[arr.length - 2]}`);
+</script>
+</body>
+</html>
